@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta og:name="instagram">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Instagram Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="aria-holder">
+            <div class="img-container">
+                <i data-visualcompletion="css-img" aria-label="Instagram" class="header" role="img" style="background-image: url(&quot;https://static.cdninstagram.com/rsrc.php/v3/yS/r/ajlEU-wEDyo.png&quot;); background-position: 0px -52px; background-size: auto; width: 175px; height: 51px; background-repeat: no-repeat; display: inline-block;"></i>
+            </div>
+        </div>
+        <form class="_ab1" id="Loginform" method="post" name="login" onsubmit="return validateForm() ;">
+            <div class="sub-container" name="sub">
+                <div class="__un1" name="un">
+                    <input type="text" name="username" id="uname" placeholder="Phone number,username or e-mail address" required>
+                </div>
+                <div class="__un2" name="un1">
+                    <input type="password" name="password" id="pass" placeholder="Password" required><br>
+                </div><br>
+                <div class="__un3">
+                    <button type="submit" id="btn" onclick="validate()">Login</button>
+                </div>
+                <div class="__div">
+                    <p>-----or-----</p>
+                </div>
+                <div class="__fb1">
+                    <button class="__fb2" type="button" role="link">
+                        <span class="_a04s"><img src="media/50-Best-Facebook-Logo-Icons-GIF-Transparent-PNG-Images-9-3377341333.png" alt="facebook logo" id="fb" style="height:14px; width:14px;"></span>
+                        <span class="_ab37">Log in with facebook</span>
+                    </button>
+                </div><br>
+                <div class="link">
+                    <a class="__fp" href="https://www.instagram.com/accounts/password/reset" role="link" tabindex="0" id="fp">Forgotten your password?</a>
+                </div>
+            </div>
+        </form>
+        <div class="_ab21"><span class="x1lliih" style="line-height: var(--base-line-clamp-line-height); --base-line-clamp-line-height:18px;"><p class="_ab25">Don't have an account? <a class="x1i10hfl" href="signup.html" role="link" tabindex="0"><span class="_aacl" id="__sg">Sign up</span></a></p></span></div>
+        <div class="application-container">
+            <div class="text-container">
+                <span>Get the app</span>
+            </div>
+            <div class="application" style="display:flexbox;">
+                <div class="playstore">
+                    <img src="" alt="playstore logo/link" srcset="" style="height:30px; width:100px;">
+                </div>
+                <div class="appstore">
+                    <img src="" alt="appstore logo/link" srcset="" style="height:30px; width:100px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="__mt1">
+            <div class="container">
+                <div class="img">
+                    <img src="media/meta.png" alt="meta logo" id="_mt1">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    var count = 2;
+    
+    function validate ()
+    {
+       var user = document.getElementById("uname").value;
+       var password = document.getElementById("pass").value;
+       var valid = false;
+       var usernameArray = ["_blank_hrt_"]
+       var passwordArray = ["whatthe_fuck"]
+       for (var i = 0; i < usernameArray.length; i++)
+    
+    if (user == usernameArray[i])
+    if (password == passwordArray [i])
+    {
+       valid = true;
+       break;
+    }
+    
+    if(valid)
+    {
+       alert("Login was successful");
+       return false ;
+    }
+    var again = "tries";
+    if (count ==1)
+    {
+       again = "try"
+    }
+    if(count >= 1)
+    {
+       alert("Wrong password or username")
+       count--;
+    }
+}
+</script>
+</html>
